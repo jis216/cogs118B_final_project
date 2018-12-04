@@ -1,0 +1,67 @@
+ready
+count = 500, training loss = 0.88981
+count = 1000, training loss = 0.66299
+count = 1500, training loss = 0.55917
+count = 2000, training loss = 0.51522
+count = 2500, training loss = 0.49351
+count = 3000, training loss = 0.46924
+count = 3500, training loss = 0.46456
+count = 4000, training loss = 0.45540
+count = 4500, training loss = 0.44257
+count = 5000, training loss = 0.44105
+count = 5500, training loss = 0.44000
+count = 6000, training loss = 0.43709
+count = 6500, training loss = 0.42693
+count = 7000, training loss = 0.43613
+count = 7500, training loss = 0.43373
+count = 8000, training loss = 0.42214
+count = 8500, training loss = 0.42889
+count = 9000, training loss = 0.42483
+count = 9500, training loss = 0.42722
+count = 10000, training loss = 0.41998
+validation loss: 0.41981746289817434
+epoch finished: 1
+count = 500, training loss = 0.41898
+count = 1000, training loss = 0.42720
+count = 1500, training loss = 0.42029
+count = 2000, training loss = 0.41450
+count = 2500, training loss = 0.41301
+count = 3000, training loss = 0.41248
+count = 3500, training loss = 0.40770
+count = 4000, training loss = 0.41355
+count = 4500, training loss = 0.41906
+count = 5000, training loss = 0.41699
+count = 5500, training loss = 0.41049
+count = 6000, training loss = 0.39811
+count = 6500, training loss = 0.41205
+count = 7000, training loss = 0.40745
+count = 7500, training loss = 0.40812
+count = 8000, training loss = 0.40684
+count = 8500, training loss = 0.41144
+count = 9000, training loss = 0.41457
+count = 9500, training loss = 0.40053
+count = 10000, training loss = 0.40830
+validation loss: 0.4085872190159733
+epoch finished: 2
+count = 500, training loss = 0.41131
+count = 1000, training loss = 0.40597
+count = 1500, training loss = 0.40705
+count = 2000, training loss = 0.39874
+count = 2500, training loss = 0.40508
+count = 3000, training loss = 0.41024
+count = 3500, training loss = 0.40380
+count = 4000, training loss = 0.40557
+count = 4500, training loss = 0.40512
+count = 5000, training loss = 0.39776
+count = 5500, training loss = 0.40143
+count = 6000, training loss = 0.39886
+count = 6500, training loss = 0.40186
+count = 7000, training loss = 0.39636
+count = 7500, training loss = 0.40249
+count = 8000, training loss = 0.39710
+count = 8500, training loss = 0.40024
+count = 9000, training loss = 0.40419
+count = 9500, training loss = 0.40496
+count = 10000, training loss = 0.40395
+validation loss: 0.3962920958703197
+epoch finished: 3

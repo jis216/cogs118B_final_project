@@ -1,31 +1,16 @@
 ## Description of Files:
 
-### main.py:
-  preprocess training and testing data. preprocessing is required for our training code to run.
-  to preprocess training data, run 'python3 main.py gen-train'
-  to preprocess testing data, run 'python3 main.py gen-test'
+### preprocess.py:
+  provide helper functions for loading and preprocessing training data.
 
 ### models.py:
-  define LSTM and GRU models
+  define the LSTM+MLP model
 
 ### configs.py:
-  define settings for training and generating
+  define hyperparameters for training
 
 ### dataloader:
   a custom dataloader for preprocessed data
 
-### train_gru.py & train_lstm.py:
-  run training with configs
-
-### *_plot.ipynb:
-  plot loss vs epoch for report
-
-### *_score.ipynb:
-  generate test reviews and calculate BLEU _score
-
-### *_training.ipynb:
-  experiment with different training settings.
-  this file is copied to a .py file 
-
-### Compare model.ipynb:
-  compare reviews generated from the test set
+### lstm_training.ipynb:
+  experiment with different training settings. Can print out training and validation loss.

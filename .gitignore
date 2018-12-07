@@ -1,4 +1,3 @@
-reviews/
-models/
-logs/
+models_score/
 essay_dataset/
+glove.*

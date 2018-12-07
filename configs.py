@@ -1,7 +1,7 @@
 cfg = {}
-cfg['input_dim'] = 204 # input dimension to LSTM
+cfg['input_dim'] = 301 # input dimension to LSTM
 cfg['hidden_dim'] = 128 # hidden dimension for LSTM
-cfg['output_dim'] = 99 # output dimension of the model
+cfg['output_dim'] = 1 # output dimension of the model
 cfg['layers'] = 2 # number of layers of LSTM
 cfg['dropout'] = 0.005 # dropout rate between two layers of LSTM; useful only when layers > 1; between 0 and 1
 cfg['bidirectional'] = False # True or False; True means using a bidirectional LSTM
@@ -16,3 +16,5 @@ cfg['train'] = True # True or False; True denotes that the model is bein deploye
 cfg['train_split'] = 0.8
 cfg['device'] = 'cuda'
 cfg['output_dir'] = './reviews/'
+cfg['embedding_dim'] = 301
+cfg['embed'] = False

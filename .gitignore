@@ -2,3 +2,5 @@ models_score/
 models_GRU/
 essay_dataset/
 glove.*
+.ipynb_checkpoints/
+__pycache__/

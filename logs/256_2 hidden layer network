@@ -1,0 +1,173 @@
+cfg['input_dim'] = 301 # input dimension to LSTM
+cfg['hidden_dim'] = 256 # hidden dimension for LSTM
+cfg['output_dim'] = 1 # output dimension of the model
+cfg['layers'] = 2 # number of layers of LSTM
+
+cfg['dropout'] = 0.005 # dropout rate between two layers of LSTM; useful only when layers > 1; between 0 and 1
+cfg['bidirectional'] = True # True or False; True means using a bidirectional LSTM
+cfg['batch_size'] = 120 # batch size of input
+cfg['learning_rate'] = 2e-4 # learning rate to be used
+cfg['L2_penalty'] = 1e-5 # weighting constant for L2 regularization term; this is a parameter when you define optimizer
+cfg['epochs'] = 20 # number of epochs for which the model is trained
+cfg['embed'] = False
+
+count = 20, loss = 38.12351
+count = 40, loss = 36.02974
+count = 60, loss = 36.76304
+count = 80, loss = 33.82230
+count = 100, loss = 33.43119
+count = 120, loss = 33.67876
+validation loss: 33.40795489719936
+epoch finished: 1
+count = 20, loss = 33.15570
+count = 40, loss = 32.06822
+count = 60, loss = 31.04934
+count = 80, loss = 29.40777
+count = 100, loss = 30.45158
+count = 120, loss = 30.18026
+validation loss: 29.510453996204195
+epoch finished: 2
+count = 20, loss = 29.15325
+count = 40, loss = 28.25833
+count = 60, loss = 26.59201
+count = 80, loss = 27.76823
+count = 100, loss = 26.35131
+count = 120, loss = 24.97263
+validation loss: 25.557173138573056
+epoch finished: 3
+count = 20, loss = 24.78251
+count = 40, loss = 24.36291
+count = 60, loss = 24.34687
+count = 80, loss = 24.25803
+count = 100, loss = 22.63428
+count = 120, loss = 22.20809
+validation loss: 22.257712682088215
+epoch finished: 4
+count = 20, loss = 21.91467
+count = 40, loss = 20.76736
+count = 60, loss = 20.40060
+count = 80, loss = 18.99307
+count = 100, loss = 20.52974
+count = 120, loss = 19.91275
+validation loss: 18.93641839708601
+epoch finished: 5
+count = 20, loss = 18.38377
+count = 40, loss = 18.17946
+count = 60, loss = 18.27347
+count = 80, loss = 17.31682
+count = 100, loss = 17.00304
+count = 120, loss = 16.00307
+validation loss: 16.117327849070232
+epoch finished: 6
+count = 20, loss = 16.11737
+count = 40, loss = 15.45791
+count = 60, loss = 15.65819
+count = 80, loss = 14.31467
+count = 100, loss = 13.62580
+count = 120, loss = 13.56399
+validation loss: 13.469082151140485
+epoch finished: 7
+count = 20, loss = 12.89637
+count = 40, loss = 12.65669
+count = 60, loss = 12.83093
+count = 80, loss = 12.58184
+count = 100, loss = 11.85478
+count = 120, loss = 11.72690
+validation loss: 11.026338577270508
+epoch finished: 8
+count = 20, loss = 10.93041
+count = 40, loss = 10.57844
+count = 60, loss = 10.23534
+count = 80, loss = 10.88699
+count = 100, loss = 9.91608
+count = 120, loss = 10.00598
+validation loss: 9.202618598937988
+epoch finished: 9
+count = 20, loss = 9.22989
+count = 40, loss = 9.28828
+count = 60, loss = 9.00575
+count = 80, loss = 8.67816
+count = 100, loss = 8.62168
+count = 120, loss = 7.81695
+validation loss: 7.732690481912522
+epoch finished: 10
+count = 20, loss = 7.74109
+count = 40, loss = 7.69901
+count = 60, loss = 7.82175
+count = 80, loss = 7.71175
+count = 100, loss = 7.58543
+count = 120, loss = 7.22935
+validation loss: 6.594554991949172
+epoch finished: 11
+count = 20, loss = 6.96014
+count = 40, loss = 6.66510
+count = 60, loss = 6.52130
+count = 80, loss = 6.61814
+count = 100, loss = 6.82398
+count = 120, loss = 6.72022
+validation loss: 5.838234958194551
+epoch finished: 12
+count = 20, loss = 5.97686
+count = 40, loss = 6.50487
+count = 60, loss = 6.16358
+count = 80, loss = 6.41119
+count = 100, loss = 6.19907
+count = 120, loss = 5.91708
+validation loss: 5.330456256866455
+epoch finished: 13
+count = 20, loss = 5.79236
+count = 40, loss = 5.75908
+count = 60, loss = 6.23103
+count = 80, loss = 5.88574
+count = 100, loss = 5.72432
+count = 120, loss = 5.84769
+validation loss: 5.050125911122277
+epoch finished: 14
+count = 20, loss = 5.56398
+count = 40, loss = 5.95352
+count = 60, loss = 5.60097
+count = 80, loss = 5.74387
+count = 100, loss = 5.50711
+count = 120, loss = 5.77029
+validation loss: 4.922242295174372
+epoch finished: 15
+count = 20, loss = 5.58953
+count = 40, loss = 5.64343
+count = 60, loss = 5.72991
+count = 80, loss = 5.55834
+count = 100, loss = 5.55318
+count = 120, loss = 5.55632
+validation loss: 4.78782396089463
+epoch finished: 16
+count = 20, loss = 5.24764
+count = 40, loss = 5.47720
+count = 60, loss = 5.70741
+count = 80, loss = 5.83441
+count = 100, loss = 5.56963
+count = 120, loss = 5.34596
+validation loss: 4.741502574511936
+epoch finished: 17
+count = 20, loss = 5.46630
+count = 40, loss = 5.37792
+count = 60, loss = 5.68927
+count = 80, loss = 5.47112
+count = 100, loss = 5.73253
+count = 120, loss = 5.43790
+validation loss: 4.715214587393261
+epoch finished: 18
+count = 20, loss = 5.51476
+count = 40, loss = 5.36517
+count = 60, loss = 5.40482
+count = 80, loss = 5.46123
+count = 100, loss = 5.88805
+count = 120, loss = 5.42993
+validation loss: 4.688049668357486
+epoch finished: 19
+count = 20, loss = 5.46195
+count = 40, loss = 5.37565
+count = 60, loss = 5.24664
+count = 80, loss = 5.70046
+count = 100, loss = 5.65785
+count = 120, loss = 5.46962
+validation loss: 4.70298783552079
+epoch finished: 20

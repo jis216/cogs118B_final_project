@@ -19,26 +19,26 @@ def process_train_data(text, word_dict,device):
     sequence = lowered.split()
         
     #sequence_feats = torch.zeros(len(sequence)+2, 301, dtype=torch.float, device=device)
-    sequence_feats = np.zeros((len(sequence)+2, 301))
+    sequence_feats = np.zeros((len(sequence)+1, 301))
     #sequence_feats[:,0] = float(score)
     
-    # SOS is [-1, 300 * -1]
-    sequence_feats[0,:] = -1
+    # SOE is [-1, 300 * -1]
+    # sequence_feats[0,0] = -1
     
     for ind, word in enumerate(sequence):
         if word not in word_dict:
             word = ''.join([c for c in word if not c.isdigit()])
         if word not in word_dict:
-            sequence_feats[ind+1, 0] = 1
+            sequence_feats[ind, 0] = 1
             for i,c in enumerate(word):
-                sequence_feats[ind+1, 1 + ord(c)] += (i+1) * 0.05 - 0.5
+                sequence_feats[ind, 1 + ord(c)] += (i+1) * 0.05 - 0.5
         else:
-            sequence_feats[ind+1, 0] = 0
+            sequence_feats[ind, 0] = 0
             #sequence_feats[ind+1, 1:] = torch.FloatTensor(word_dict[word].tolist(),device=device)
-            sequence_feats[ind+1, 1:] = word_dict[word]
+            sequence_feats[ind, 1:] = word_dict[word]
 
                
-    # EOS is [-1, 300 * 0]
+    # EOE is [-1, 300 * 0]
     sequence_feats[-1,0] = -1
     
     #print(np.asarray(essay_feats)[:,0])

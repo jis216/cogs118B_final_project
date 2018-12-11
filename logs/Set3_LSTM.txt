@@ -11,6 +11,7 @@ cfg['L2_penalty'] = 1e-4 # weighting constant for L2 regularization term; this i
 cfg['epochs'] = 20 # number of epochs for which the model is trained
 cfg['embed'] = False
 cfg['score_range'] = 3
+cfg['set_id'] = 3
 
 LSTM_Score(
   (embed_linear): Linear(in_features=301, out_features=301, bias=True)
@@ -19,187 +20,187 @@ LSTM_Score(
   (fc1): Linear(in_features=256, out_features=1, bias=True)
 )
 
-count = 2, loss = 0.86803
-count = 4, loss = 0.62905
-count = 6, loss = 0.40712
-count = 8, loss = 0.44396
-count = 10, loss = 0.39016
-count = 12, loss = 0.35715
-count = 14, loss = 0.30280
-validation loss: 0.2532244771718979
+count = 2, loss = 0.82666
+count = 4, loss = 0.64416
+count = 6, loss = 0.50574
+count = 8, loss = 0.42530
+count = 10, loss = 0.39656
+count = 12, loss = 0.39575
+count = 14, loss = 0.41927
+validation loss: 0.3161255419254303
 epoch finished: 1
-count = 2, loss = 0.36521
-count = 4, loss = 0.30100
-count = 6, loss = 0.31964
-count = 8, loss = 0.34735
-count = 10, loss = 0.33354
-count = 12, loss = 0.26157
-count = 14, loss = 0.30000
-validation loss: 0.23554377630352974
+count = 2, loss = 0.37497
+count = 4, loss = 0.29340
+count = 6, loss = 0.30460
+count = 8, loss = 0.41915
+count = 10, loss = 0.40326
+count = 12, loss = 0.30304
+count = 14, loss = 0.27377
+validation loss: 0.2627099044620991
 epoch finished: 2
-count = 2, loss = 0.31954
-count = 4, loss = 0.29883
-count = 6, loss = 0.33977
-count = 8, loss = 0.36371
-count = 10, loss = 0.30222
-count = 12, loss = 0.25707
-count = 14, loss = 0.22363
-validation loss: 0.2288527674973011
+count = 2, loss = 0.26656
+count = 4, loss = 0.25183
+count = 6, loss = 0.27208
+count = 8, loss = 0.29760
+count = 10, loss = 0.28605
+count = 12, loss = 0.34713
+count = 14, loss = 0.42267
+validation loss: 0.22272032871842384
 epoch finished: 3
-count = 2, loss = 0.31141
-count = 4, loss = 0.24574
-count = 6, loss = 0.33369
-count = 8, loss = 0.29946
-count = 10, loss = 0.30047
-count = 12, loss = 0.31055
-count = 14, loss = 0.24697
-validation loss: 0.21865294128656387
+count = 2, loss = 0.34945
+count = 4, loss = 0.31087
+count = 6, loss = 0.31903
+count = 8, loss = 0.27467
+count = 10, loss = 0.29368
+count = 12, loss = 0.26985
+count = 14, loss = 0.30244
+validation loss: 0.22902006283402443
 epoch finished: 4
-count = 2, loss = 0.26943
-count = 4, loss = 0.33968
-count = 6, loss = 0.30924
-count = 8, loss = 0.27954
-count = 10, loss = 0.31283
-count = 12, loss = 0.29050
-count = 14, loss = 0.28993
-validation loss: 0.23397152870893478
+count = 2, loss = 0.28360
+count = 4, loss = 0.32058
+count = 6, loss = 0.25915
+count = 8, loss = 0.35992
+count = 10, loss = 0.30439
+count = 12, loss = 0.22193
+count = 14, loss = 0.32653
+validation loss: 0.22791169211268425
 epoch finished: 5
-count = 2, loss = 0.30807
-count = 4, loss = 0.28841
-count = 6, loss = 0.25051
-count = 8, loss = 0.25543
-count = 10, loss = 0.31055
-count = 12, loss = 0.30089
-count = 14, loss = 0.27958
-validation loss: 0.23329813033342361
+count = 2, loss = 0.25508
+count = 4, loss = 0.31312
+count = 6, loss = 0.28442
+count = 8, loss = 0.36625
+count = 10, loss = 0.27113
+count = 12, loss = 0.27559
+count = 14, loss = 0.25916
+validation loss: 0.2266727164387703
 epoch finished: 6
-count = 2, loss = 0.26911
-count = 4, loss = 0.30968
-count = 6, loss = 0.23291
-count = 8, loss = 0.26882
-count = 10, loss = 0.28848
-count = 12, loss = 0.28615
-count = 14, loss = 0.35268
-validation loss: 0.2282397635281086
+count = 2, loss = 0.25143
+count = 4, loss = 0.25544
+count = 6, loss = 0.29385
+count = 8, loss = 0.27425
+count = 10, loss = 0.30273
+count = 12, loss = 0.32155
+count = 14, loss = 0.30498
+validation loss: 0.23313118144869804
 epoch finished: 7
-count = 2, loss = 0.30206
-count = 4, loss = 0.27687
-count = 6, loss = 0.33454
-count = 8, loss = 0.28477
-count = 10, loss = 0.26004
-count = 12, loss = 0.26800
-count = 14, loss = 0.25185
-validation loss: 0.23799846321344376
+count = 2, loss = 0.23617
+count = 4, loss = 0.28599
+count = 6, loss = 0.27078
+count = 8, loss = 0.32320
+count = 10, loss = 0.30012
+count = 12, loss = 0.31518
+count = 14, loss = 0.27245
+validation loss: 0.23015473037958145
 epoch finished: 8
-count = 2, loss = 0.21957
-count = 4, loss = 0.32464
-count = 6, loss = 0.28620
-count = 8, loss = 0.27155
-count = 10, loss = 0.25728
-count = 12, loss = 0.31413
-count = 14, loss = 0.30486
-validation loss: 0.21795429289340973
+count = 2, loss = 0.29961
+count = 4, loss = 0.29822
+count = 6, loss = 0.30649
+count = 8, loss = 0.23198
+count = 10, loss = 0.24962
+count = 12, loss = 0.28319
+count = 14, loss = 0.26494
+validation loss: 0.22966530174016953
 epoch finished: 9
-count = 2, loss = 0.27527
-count = 4, loss = 0.24266
-count = 6, loss = 0.28246
-count = 8, loss = 0.32225
-count = 10, loss = 0.25079
-count = 12, loss = 0.23524
-count = 14, loss = 0.32313
-validation loss: 0.2550240159034729
+count = 2, loss = 0.20444
+count = 4, loss = 0.25860
+count = 6, loss = 0.32058
+count = 8, loss = 0.29237
+count = 10, loss = 0.27716
+count = 12, loss = 0.27433
+count = 14, loss = 0.27484
+validation loss: 0.25284354761242867
 epoch finished: 10
-count = 2, loss = 0.35605
-count = 4, loss = 0.20984
-count = 6, loss = 0.29095
-count = 8, loss = 0.29338
-count = 10, loss = 0.25377
-count = 12, loss = 0.25294
-count = 14, loss = 0.33039
-validation loss: 0.23788617551326752
+count = 2, loss = 0.29784
+count = 4, loss = 0.29252
+count = 6, loss = 0.30429
+count = 8, loss = 0.26814
+count = 10, loss = 0.24315
+count = 12, loss = 0.24742
+count = 14, loss = 0.29700
+validation loss: 0.23368989303708076
 epoch finished: 11
-count = 2, loss = 0.35264
-count = 4, loss = 0.30203
-count = 6, loss = 0.22503
-count = 8, loss = 0.28469
-count = 10, loss = 0.24487
-count = 12, loss = 0.26205
-count = 14, loss = 0.30181
-validation loss: 0.2568875551223755
+count = 2, loss = 0.32260
+count = 4, loss = 0.20818
+count = 6, loss = 0.28539
+count = 8, loss = 0.28341
+count = 10, loss = 0.21679
+count = 12, loss = 0.26044
+count = 14, loss = 0.26107
+validation loss: 0.24604539573192596
 epoch finished: 12
-count = 2, loss = 0.33853
-count = 4, loss = 0.27805
-count = 6, loss = 0.23015
-count = 8, loss = 0.27296
-count = 10, loss = 0.23790
-count = 12, loss = 0.26814
-count = 14, loss = 0.23009
-validation loss: 0.22041673585772514
+count = 2, loss = 0.24279
+count = 4, loss = 0.22493
+count = 6, loss = 0.29320
+count = 8, loss = 0.31551
+count = 10, loss = 0.24924
+count = 12, loss = 0.25295
+count = 14, loss = 0.25329
+validation loss: 0.2857799306511879
 epoch finished: 13
-count = 2, loss = 0.24853
-count = 4, loss = 0.25281
-count = 6, loss = 0.28912
-count = 8, loss = 0.27257
-count = 10, loss = 0.27189
-count = 12, loss = 0.28918
-count = 14, loss = 0.25165
-validation loss: 0.243169404566288
+count = 2, loss = 0.24558
+count = 4, loss = 0.28133
+count = 6, loss = 0.29834
+count = 8, loss = 0.23061
+count = 10, loss = 0.29694
+count = 12, loss = 0.23820
+count = 14, loss = 0.25808
+validation loss: 0.2296457290649414
 epoch finished: 14
-count = 2, loss = 0.27244
-count = 4, loss = 0.23186
-count = 6, loss = 0.20613
-count = 8, loss = 0.28395
-count = 10, loss = 0.21115
-count = 12, loss = 0.33503
-count = 14, loss = 0.26118
-validation loss: 0.2509535551071167
+count = 2, loss = 0.27277
+count = 4, loss = 0.26874
+count = 6, loss = 0.23469
+count = 8, loss = 0.23916
+count = 10, loss = 0.28428
+count = 12, loss = 0.24628
+count = 14, loss = 0.24506
+validation loss: 0.24622481688857079
 epoch finished: 15
-count = 2, loss = 0.27298
-count = 4, loss = 0.27509
-count = 6, loss = 0.21214
-count = 8, loss = 0.28718
-count = 10, loss = 0.26123
-count = 12, loss = 0.27360
-count = 14, loss = 0.25645
-validation loss: 0.26392290741205215
+count = 2, loss = 0.28252
+count = 4, loss = 0.25192
+count = 6, loss = 0.25621
+count = 8, loss = 0.24928
+count = 10, loss = 0.22782
+count = 12, loss = 0.22617
+count = 14, loss = 0.23494
+validation loss: 0.24980024993419647
 epoch finished: 16
-count = 2, loss = 0.21794
-count = 4, loss = 0.27580
-count = 6, loss = 0.25926
-count = 8, loss = 0.27177
-count = 10, loss = 0.28413
-count = 12, loss = 0.22704
-count = 14, loss = 0.24789
-validation loss: 0.27903755381703377
+count = 2, loss = 0.20583
+count = 4, loss = 0.21396
+count = 6, loss = 0.26828
+count = 8, loss = 0.20690
+count = 10, loss = 0.24540
+count = 12, loss = 0.23798
+count = 14, loss = 0.26213
+validation loss: 0.27171340957283974
 epoch finished: 17
-count = 2, loss = 0.31307
-count = 4, loss = 0.22624
-count = 6, loss = 0.20919
-count = 8, loss = 0.26305
-count = 10, loss = 0.20412
-count = 12, loss = 0.24586
-count = 14, loss = 0.26901
-validation loss: 0.2483043521642685
+count = 2, loss = 0.19360
+count = 4, loss = 0.28114
+count = 6, loss = 0.22456
+count = 8, loss = 0.24578
+count = 10, loss = 0.20516
+count = 12, loss = 0.25553
+count = 14, loss = 0.23484
+validation loss: 0.3119397386908531
 epoch finished: 18
-count = 2, loss = 0.25607
-count = 4, loss = 0.21780
-count = 6, loss = 0.25834
-count = 8, loss = 0.27092
-count = 10, loss = 0.25448
-count = 12, loss = 0.21729
-count = 14, loss = 0.26604
-validation loss: 0.23938454687595367
+count = 2, loss = 0.23639
+count = 4, loss = 0.25200
+count = 6, loss = 0.20374
+count = 8, loss = 0.20025
+count = 10, loss = 0.19359
+count = 12, loss = 0.24009
+count = 14, loss = 0.25924
+validation loss: 0.25341858714818954
 epoch finished: 19
-count = 2, loss = 0.25571
-count = 4, loss = 0.27523
-count = 6, loss = 0.22098
-count = 8, loss = 0.24349
-count = 10, loss = 0.19922
-count = 12, loss = 0.19346
-count = 14, loss = 0.27018
-validation loss: 0.28268422558903694
+count = 2, loss = 0.22806
+count = 4, loss = 0.18390
+count = 6, loss = 0.20683
+count = 8, loss = 0.20332
+count = 10, loss = 0.20292
+count = 12, loss = 0.27525
+count = 14, loss = 0.22711
+validation loss: 0.29656877741217613
 epoch finished: 20
 
-validation MSE: 0.2854369357228279
-validation MAE: 0.1401178129017353
-QWK Score: 0.7089646086592012
+validation MSE: 0.2940039187669754
+validation MAE: 0.1424475722014904
+QWK Score: 0.7030089878858929

@@ -1,0 +1,154 @@
+cfg['input_dim'] = 301 # input dimension to LSTM
+cfg['hidden_dim'] = 128 # hidden dimension for LSTM
+cfg['output_dim'] = 1 # output dimension of the model
+cfg['layers'] = 2 # number of layers of LSTM
+
+cfg['dropout'] = 5e-3 # dropout rate between two layers of LSTM; useful only when layers > 1; between 0 and 1
+cfg['bidirectional'] = True # True or False; True means using a bidirectional LSTM
+cfg['batch_size'] = 120 # batch size of input
+cfg['learning_rate'] = 1e-3 # learning rate to be used
+cfg['L2_penalty'] = 1e-4 # weighting constant for L2 regularization term; this is a parameter when you define optimizer
+cfg['epochs'] = 15 # number of epochs for which the model is trained
+cfg['embed'] = False
+cfg['score_range'] = 4
+cfg['set_id'] = 5
+
+count = 2, loss = 1.53686
+count = 4, loss = 0.94980
+count = 6, loss = 0.53822
+count = 8, loss = 0.49946
+count = 10, loss = 0.36630
+count = 12, loss = 0.31983
+count = 14, loss = 0.35199
+validation loss: 0.30896622240543364
+epoch finished: 1
+count = 2, loss = 0.27931
+count = 4, loss = 0.29210
+count = 6, loss = 0.26982
+count = 8, loss = 0.29231
+count = 10, loss = 0.35304
+count = 12, loss = 0.22854
+count = 14, loss = 0.30970
+validation loss: 0.24497891664505006
+epoch finished: 2
+count = 2, loss = 0.27798
+count = 4, loss = 0.24637
+count = 6, loss = 0.22614
+count = 8, loss = 0.25107
+count = 10, loss = 0.24619
+count = 12, loss = 0.26050
+count = 14, loss = 0.22750
+validation loss: 0.22860061526298522
+epoch finished: 3
+count = 2, loss = 0.22600
+count = 4, loss = 0.25077
+count = 6, loss = 0.22577
+count = 8, loss = 0.23374
+count = 10, loss = 0.27811
+count = 12, loss = 0.27318
+count = 14, loss = 0.25165
+validation loss: 0.2333742767572403
+epoch finished: 4
+count = 2, loss = 0.23986
+count = 4, loss = 0.23603
+count = 6, loss = 0.24497
+count = 8, loss = 0.22912
+count = 10, loss = 0.24382
+count = 12, loss = 0.20464
+count = 14, loss = 0.23660
+validation loss: 0.24347523152828215
+epoch finished: 5
+count = 2, loss = 0.20912
+count = 4, loss = 0.23589
+count = 6, loss = 0.22810
+count = 8, loss = 0.26069
+count = 10, loss = 0.25368
+count = 12, loss = 0.23813
+count = 14, loss = 0.20202
+validation loss: 0.25502311289310453
+epoch finished: 6
+count = 2, loss = 0.24261
+count = 4, loss = 0.20474
+count = 6, loss = 0.25296
+count = 8, loss = 0.23506
+count = 10, loss = 0.24325
+count = 12, loss = 0.23165
+count = 14, loss = 0.22070
+validation loss: 0.2461045652627945
+epoch finished: 7
+count = 2, loss = 0.19502
+count = 4, loss = 0.22352
+count = 6, loss = 0.26013
+count = 8, loss = 0.25451
+count = 10, loss = 0.20875
+count = 12, loss = 0.24481
+count = 14, loss = 0.25271
+validation loss: 0.23409993350505828
+epoch finished: 8
+count = 2, loss = 0.22220
+count = 4, loss = 0.18220
+count = 6, loss = 0.24244
+count = 8, loss = 0.23796
+count = 10, loss = 0.23510
+count = 12, loss = 0.21971
+count = 14, loss = 0.22025
+validation loss: 0.243326336145401
+epoch finished: 9
+count = 2, loss = 0.22803
+count = 4, loss = 0.19693
+count = 6, loss = 0.24851
+count = 8, loss = 0.19011
+count = 10, loss = 0.21838
+count = 12, loss = 0.21593
+count = 14, loss = 0.26807
+validation loss: 0.2732977122068405
+epoch finished: 10
+count = 2, loss = 0.19718
+count = 4, loss = 0.20599
+count = 6, loss = 0.20615
+count = 8, loss = 0.20896
+count = 10, loss = 0.27747
+count = 12, loss = 0.22339
+count = 14, loss = 0.26184
+validation loss: 0.257798308134079
+epoch finished: 11
+count = 2, loss = 0.20614
+count = 4, loss = 0.20169
+count = 6, loss = 0.23042
+count = 8, loss = 0.20382
+count = 10, loss = 0.21641
+count = 12, loss = 0.23452
+count = 14, loss = 0.25030
+validation loss: 0.25916328132152555
+epoch finished: 12
+count = 2, loss = 0.20287
+count = 4, loss = 0.18154
+count = 6, loss = 0.20318
+count = 8, loss = 0.23218
+count = 10, loss = 0.24624
+count = 12, loss = 0.23133
+count = 14, loss = 0.19996
+validation loss: 0.2577835500240326
+epoch finished: 13
+count = 2, loss = 0.23570
+count = 4, loss = 0.26196
+count = 6, loss = 0.29675
+count = 8, loss = 0.19569
+count = 10, loss = 0.22908
+count = 12, loss = 0.22404
+count = 14, loss = 0.16804
+validation loss: 0.24364061653614044
+epoch finished: 14
+count = 2, loss = 0.20831
+count = 4, loss = 0.21526
+count = 6, loss = 0.24554
+count = 8, loss = 0.21292
+count = 10, loss = 0.17902
+count = 12, loss = 0.23098
+count = 14, loss = 0.23879
+validation loss: 0.25981886088848116
+epoch finished: 15
+
+validation MSE: 0.2575594216585159
+validation MAE: 0.10164263546466827
+QWK Score: 0.810938309533981

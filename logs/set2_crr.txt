@@ -1,0 +1,205 @@
+cfg['input_dim'] = 301 # input dimension to LSTM
+cfg['hidden_dim'] = 128 # hidden dimension for LSTM
+cfg['output_dim'] = 1 # output dimension of the model
+cfg['layers'] = 2 # number of layers of LSTM
+
+cfg['dropout'] = 5e-2 # dropout rate between two layers of LSTM; useful only when layers > 1; between 0 and 1
+cfg['bidirectional'] = True # True or False; True means using a bidirectional LSTM
+cfg['batch_size'] = 120 # batch size of input
+cfg['learning_rate'] = 1e-3 # learning rate to be used
+cfg['L2_penalty'] = 1e-4 # weighting constant for L2 regularization term; this is a parameter when you define optimizer
+cfg['epochs'] = 20 # number of epochs for which the model is trained
+cfg['embed'] = False
+cfg['score_range'] = 5
+
+LSTM_Score(
+  (embed_linear): Linear(in_features=301, out_features=301, bias=True)
+  (lstm): LSTM(301, 128, num_layers=2, batch_first=True, dropout=0.05, bidirectional=True)
+  (bn): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=256, out_features=1, bias=True)
+)
+
+count = 2, loss = 2.07545
+count = 4, loss = 2.06772
+count = 6, loss = 0.82046
+count = 8, loss = 0.35912
+count = 10, loss = 0.27037
+count = 12, loss = 0.28470
+count = 14, loss = 0.35865
+validation loss: 0.21242425739765167
+epoch finished: 1
+count = 2, loss = 0.26439
+count = 4, loss = 0.28953
+count = 6, loss = 0.35698
+count = 8, loss = 0.31285
+count = 10, loss = 0.27919
+count = 12, loss = 0.29402
+count = 14, loss = 0.27148
+validation loss: 0.22462601959705353
+epoch finished: 2
+count = 2, loss = 0.28122
+count = 4, loss = 0.28757
+count = 6, loss = 0.29421
+count = 8, loss = 0.28232
+count = 10, loss = 0.32485
+count = 12, loss = 0.31197
+count = 14, loss = 0.22721
+validation loss: 0.23943398892879486
+epoch finished: 3
+count = 2, loss = 0.29404
+count = 4, loss = 0.25618
+count = 6, loss = 0.28978
+count = 8, loss = 0.29381
+count = 10, loss = 0.33144
+count = 12, loss = 0.19858
+count = 14, loss = 0.26711
+validation loss: 0.22360673546791077
+epoch finished: 4
+count = 2, loss = 0.30306
+count = 4, loss = 0.24865
+count = 6, loss = 0.26086
+count = 8, loss = 0.24246
+count = 10, loss = 0.28540
+count = 12, loss = 0.29138
+count = 14, loss = 0.27522
+validation loss: 0.22285895943641662
+epoch finished: 5
+count = 2, loss = 0.29798
+count = 4, loss = 0.29627
+count = 6, loss = 0.31578
+count = 8, loss = 0.27881
+count = 10, loss = 0.23764
+count = 12, loss = 0.29873
+count = 14, loss = 0.24658
+validation loss: 0.21806510388851166
+epoch finished: 6
+count = 2, loss = 0.28572
+count = 4, loss = 0.32781
+count = 6, loss = 0.23521
+count = 8, loss = 0.25197
+count = 10, loss = 0.28941
+count = 12, loss = 0.29025
+count = 14, loss = 0.25045
+validation loss: 0.2248725712299347
+epoch finished: 7
+count = 2, loss = 0.24363
+count = 4, loss = 0.24348
+count = 6, loss = 0.33953
+count = 8, loss = 0.28890
+count = 10, loss = 0.31586
+count = 12, loss = 0.26883
+count = 14, loss = 0.27971
+validation loss: 0.2449920356273651
+epoch finished: 8
+count = 2, loss = 0.25449
+count = 4, loss = 0.23776
+count = 6, loss = 0.23090
+count = 8, loss = 0.32362
+count = 10, loss = 0.29946
+count = 12, loss = 0.28903
+count = 14, loss = 0.30310
+validation loss: 0.23471840620040893
+epoch finished: 9
+count = 2, loss = 0.29232
+count = 4, loss = 0.26159
+count = 6, loss = 0.21002
+count = 8, loss = 0.33157
+count = 10, loss = 0.22646
+count = 12, loss = 0.26020
+count = 14, loss = 0.29439
+validation loss: 0.2301476329565048
+epoch finished: 10
+count = 2, loss = 0.33797
+count = 4, loss = 0.25541
+count = 6, loss = 0.30068
+count = 8, loss = 0.25688
+count = 10, loss = 0.22012
+count = 12, loss = 0.24268
+count = 14, loss = 0.30893
+validation loss: 0.2336845427751541
+epoch finished: 11
+count = 2, loss = 0.28864
+count = 4, loss = 0.25046
+count = 6, loss = 0.25746
+count = 8, loss = 0.27436
+count = 10, loss = 0.26012
+count = 12, loss = 0.29937
+count = 14, loss = 0.25382
+validation loss: 0.25200868844985963
+epoch finished: 12
+count = 2, loss = 0.32345
+count = 4, loss = 0.28038
+count = 6, loss = 0.23861
+count = 8, loss = 0.22493
+count = 10, loss = 0.29786
+count = 12, loss = 0.24980
+count = 14, loss = 0.25502
+validation loss: 0.2397666245698929
+epoch finished: 13
+count = 2, loss = 0.25380
+count = 4, loss = 0.24164
+count = 6, loss = 0.25988
+count = 8, loss = 0.25391
+count = 10, loss = 0.30830
+count = 12, loss = 0.28146
+count = 14, loss = 0.23822
+validation loss: 0.24028668999671937
+epoch finished: 14
+count = 2, loss = 0.22285
+count = 4, loss = 0.22126
+count = 6, loss = 0.27121
+count = 8, loss = 0.29489
+count = 10, loss = 0.29999
+count = 12, loss = 0.26917
+count = 14, loss = 0.22984
+validation loss: 0.2408567786216736
+epoch finished: 15
+count = 2, loss = 0.21113
+count = 4, loss = 0.27581
+count = 6, loss = 0.25607
+count = 8, loss = 0.25426
+count = 10, loss = 0.29604
+count = 12, loss = 0.30339
+count = 14, loss = 0.29661
+validation loss: 0.26963783204555514
+epoch finished: 16
+count = 2, loss = 0.26169
+count = 4, loss = 0.27352
+count = 6, loss = 0.25220
+count = 8, loss = 0.25427
+count = 10, loss = 0.24334
+count = 12, loss = 0.26881
+count = 14, loss = 0.23350
+validation loss: 0.2595061093568802
+epoch finished: 17
+count = 2, loss = 0.25413
+count = 4, loss = 0.23054
+count = 6, loss = 0.27557
+count = 8, loss = 0.24519
+count = 10, loss = 0.25360
+count = 12, loss = 0.23017
+count = 14, loss = 0.24174
+validation loss: 0.2505091160535812
+epoch finished: 18
+count = 2, loss = 0.25561
+count = 4, loss = 0.23740
+count = 6, loss = 0.28942
+count = 8, loss = 0.24340
+count = 10, loss = 0.23988
+count = 12, loss = 0.28080
+count = 14, loss = 0.24190
+validation loss: 0.261871924996376
+epoch finished: 19
+count = 2, loss = 0.23384
+count = 4, loss = 0.22089
+count = 6, loss = 0.28876
+count = 8, loss = 0.24773
+count = 10, loss = 0.28449
+count = 12, loss = 0.29630
+count = 14, loss = 0.28036
+validation loss: 0.24984993040561676
+epoch finished: 20
+
+validation MSE: 0.2503941416740417
+validation MAE: 0.07970901429653168
+QWK Score: 0.5885128150759362

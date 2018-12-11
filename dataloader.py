@@ -19,7 +19,7 @@ def process_train_data(text, word_dict,device):
     sequence = lowered.split()
         
     #sequence_feats = torch.zeros(len(sequence)+2, 301, dtype=torch.float, device=device)
-    sequence_feats = np.zeros((len(sequence)+1, 301))
+    sequence_feats = np.zeros((len(sequence), 301))
     #sequence_feats[:,0] = float(score)
     
     # SOE is [-1, 300 * -1]
@@ -29,17 +29,17 @@ def process_train_data(text, word_dict,device):
         if word not in word_dict:
             word = ''.join([c for c in word if not c.isdigit()])
         if word not in word_dict:
-            sequence_feats[ind, 0] = 1
+            sequence_feats[ind, 0] = -1
             for i,c in enumerate(word):
-                sequence_feats[ind, 1 + ord(c)] += (i+1) * 0.05 - 0.5
+                sequence_feats[ind, 1 + i] = (ord(c) - 32) / (126-32) * 2 - 1
         else:
-            sequence_feats[ind, 0] = 0
+            sequence_feats[ind, 0] = 1
             #sequence_feats[ind+1, 1:] = torch.FloatTensor(word_dict[word].tolist(),device=device)
             sequence_feats[ind, 1:] = word_dict[word]
 
                
     # EOE is [-1, 300 * 0]
-    sequence_feats[-1,0] = -1
+    #sequence_feats[-1,0] = -1
     
     #print(np.asarray(essay_feats)[:,0])
     #print(essay_feats[len(essay_feats)-1])
@@ -61,29 +61,34 @@ class DataLoader:
         batch_index = self.rest[-self.batch_size:]
         del self.rest[-self.batch_size:]
                 
-        scores = self.data['domain1_score']
-        essays = self.data['essay']
+        scores = self.data['domain1_score'].values
+        essays = self.data['essay'].values
 
         # find the longest sequence in this batch
         seq = 0
         essay_codes = []
         
+        seq_lengths = torch.zeros(self.batch_size, dtype=torch.long, device=self.device)
+        #print(len(self.data['essay']))
+        #print(type(self.data['essay']))
         for i, index in enumerate(batch_index):
-            essay = (self.data['essay'])[index]
+            essay = essays[index]
             text = process_train_data(essay, self.word_dict, 'cuda')
             essay_codes.append(text)
             
             l = len(text)
 
+            seq_lengths[i] = l
+            
             if l > seq:
                 seq = l
                 
-        eos = [0] * 301
-        eos[0] = -1
+        eoe = [0] * 301
+        #eos[0] = -1
         
         for j,es in enumerate(essay_codes):
             #print()
-            essay_codes[j] += (seq - len(es)) * [eos]
+            essay_codes[j] += (seq - len(es)) * [eoe]
 
         essay_codes = torch.tensor(essay_codes, dtype=torch.float, device=self.device)
         
@@ -96,13 +101,16 @@ class DataLoader:
         
         train[batch_arange] = essay_codes
         
-        scores = (self.data['domain1_score'])[batch_index]
+        scores = scores[batch_index]
         scores = [[s] for s in scores]
         
         label[n_indices, 0] = torch.tensor(scores,dtype=torch.float, device = self.device)
 
         del scores
-        return train, label
+        #print(train.size())
+        #print(label.size())
+        #print(seq_lengths.size())
+        return train, label, seq_lengths
     
     
     def has_next(self):

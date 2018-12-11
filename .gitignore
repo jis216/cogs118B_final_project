@@ -1,5 +1,6 @@
 models_score/
 models_GRU/
+models*/
 essay_dataset/
 glove.*
 .ipynb_checkpoints/

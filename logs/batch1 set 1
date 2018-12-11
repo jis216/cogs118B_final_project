@@ -1,0 +1,193 @@
+from configs import cfg
+
+cfg['input_dim'] = 301 # input dimension to LSTM
+cfg['hidden_dim'] = 128 # hidden dimension for LSTM
+cfg['output_dim'] = 1 # output dimension of the model
+cfg['layers'] = 2 # number of layers of LSTM
+
+cfg['dropout'] = 1e-6 # dropout rate between two layers of LSTM; useful only when layers > 1; between 0 and 1
+cfg['bidirectional'] = True # True or False; True means using a bidirectional LSTM
+cfg['batch_size'] = 1 # batch size of input
+cfg['learning_rate'] = 1e-5 # learning rate to be used
+cfg['L2_penalty'] = 1e-6 # weighting constant for L2 regularization term; this is a parameter when you define optimizer
+cfg['epochs'] = 20 # number of epochs for which the model is trained
+cfg['embed'] = False
+cfg['score_range'] = 10
+
+count = 200, loss = 0.04762
+count = 400, loss = 0.04142
+count = 600, loss = 0.02284
+count = 800, loss = 0.02007
+count = 1000, loss = 0.01860
+count = 1200, loss = 0.02567
+count = 1400, loss = 0.02924
+count = 1600, loss = 0.02119
+validation loss: 0.018024821821062593
+epoch finished: 1
+count = 200, loss = 0.02015
+count = 400, loss = 0.02383
+count = 600, loss = 0.02472
+count = 800, loss = 0.02303
+count = 1000, loss = 0.02446
+count = 1200, loss = 0.02364
+count = 1400, loss = 0.02334
+count = 1600, loss = 0.02402
+validation loss: 0.018361346012673932
+epoch finished: 2
+count = 200, loss = 0.02601
+count = 400, loss = 0.02092
+count = 600, loss = 0.02531
+count = 800, loss = 0.01808
+count = 1000, loss = 0.02602
+count = 1200, loss = 0.02338
+count = 1400, loss = 0.02586
+count = 1600, loss = 0.01940
+validation loss: 0.0179166192027182
+epoch finished: 3
+count = 200, loss = 0.01989
+count = 400, loss = 0.02529
+count = 600, loss = 0.02182
+count = 800, loss = 0.02400
+count = 1000, loss = 0.02556
+count = 1200, loss = 0.02218
+count = 1400, loss = 0.02741
+count = 1600, loss = 0.02351
+validation loss: 0.01794992611488147
+epoch finished: 4
+count = 200, loss = 0.02223
+count = 400, loss = 0.02509
+count = 600, loss = 0.02315
+count = 800, loss = 0.02510
+count = 1000, loss = 0.02056
+count = 1200, loss = 0.02802
+count = 1400, loss = 0.02371
+count = 1600, loss = 0.02117
+validation loss: 0.01802557158119445
+epoch finished: 5
+count = 200, loss = 0.02267
+count = 400, loss = 0.01946
+count = 600, loss = 0.02482
+count = 800, loss = 0.02060
+count = 1000, loss = 0.02613
+count = 1200, loss = 0.02272
+count = 1400, loss = 0.02517
+count = 1600, loss = 0.02308
+validation loss: 0.01784661796587521
+epoch finished: 6
+count = 200, loss = 0.01964
+count = 400, loss = 0.02150
+count = 600, loss = 0.02381
+count = 800, loss = 0.02259
+count = 1000, loss = 0.02583
+count = 1200, loss = 0.02601
+count = 1400, loss = 0.02420
+count = 1600, loss = 0.02586
+validation loss: 0.018187824534513182
+epoch finished: 7
+count = 200, loss = 0.02549
+count = 400, loss = 0.02233
+count = 600, loss = 0.02475
+count = 800, loss = 0.02092
+count = 1000, loss = 0.01857
+count = 1200, loss = 0.01977
+count = 1400, loss = 0.02604
+count = 1600, loss = 0.02568
+validation loss: 0.01788348350735185
+epoch finished: 8
+count = 200, loss = 0.02306
+count = 400, loss = 0.02014
+count = 600, loss = 0.02672
+count = 800, loss = 0.02437
+count = 1000, loss = 0.02477
+count = 1200, loss = 0.02521
+count = 1400, loss = 0.01990
+count = 1600, loss = 0.02266
+validation loss: 0.01837415756934033
+epoch finished: 9
+count = 200, loss = 0.01922
+count = 400, loss = 0.02430
+count = 600, loss = 0.02146
+count = 800, loss = 0.02424
+count = 1000, loss = 0.02207
+count = 1200, loss = 0.02495
+count = 1400, loss = 0.02133
+count = 1600, loss = 0.02529
+validation loss: 0.017409668315885075
+epoch finished: 10
+count = 200, loss = 0.02018
+count = 400, loss = 0.02321
+count = 600, loss = 0.02374
+count = 800, loss = 0.02534
+count = 1000, loss = 0.02123
+count = 1200, loss = 0.02370
+count = 1400, loss = 0.02287
+count = 1600, loss = 0.02092
+validation loss: 0.017119849829638854
+epoch finished: 11
+count = 200, loss = 0.02134
+count = 400, loss = 0.02058
+count = 600, loss = 0.01958
+count = 800, loss = 0.02883
+count = 1000, loss = 0.02135
+count = 1200, loss = 0.02027
+count = 1400, loss = 0.02382
+count = 1600, loss = 0.02258
+validation loss: 0.016303932821182043
+epoch finished: 12
+count = 200, loss = 0.02174
+count = 400, loss = 0.02110
+count = 600, loss = 0.02256
+count = 800, loss = 0.02104
+count = 1000, loss = 0.02202
+count = 1200, loss = 0.01988
+count = 1400, loss = 0.01904
+count = 1600, loss = 0.01629
+validation loss: 0.015996016988519886
+epoch finished: 13
+count = 200, loss = 0.01891
+count = 400, loss = 0.01798
+count = 600, loss = 0.01787
+count = 800, loss = 0.01246
+count = 1000, loss = 0.01338
+count = 1200, loss = 0.01675
+count = 1400, loss = 0.01479
+count = 1600, loss = 0.01120
+validation loss: 0.009075432846112903
+epoch finished: 14
+count = 200, loss = 0.01175
+count = 400, loss = 0.01150
+count = 600, loss = 0.01266
+count = 800, loss = 0.01527
+count = 1000, loss = 0.00824
+count = 1200, loss = 0.01381
+count = 1400, loss = 0.01314
+count = 1600, loss = 0.01010
+validation loss: 0.00668034418898226
+epoch finished: 15
+count = 200, loss = 0.01112
+count = 400, loss = 0.01281
+count = 600, loss = 0.01139
+count = 800, loss = 0.01107
+count = 1000, loss = 0.00869
+count = 1200, loss = 0.01208
+count = 1400, loss = 0.00862
+count = 1600, loss = 0.00945
+validation loss: 0.005974174535879663
+epoch finished: 16
+count = 200, loss = 0.01079
+count = 400, loss = 0.00996
+count = 600, loss = 0.01081
+count = 800, loss = 0.01004
+count = 1000, loss = 0.00984
+count = 1200, loss = 0.00933
+count = 1400, loss = 0.00795
+count = 1600, loss = 0.00820
+validation loss: 0.009849468653481654
+epoch finished: 17
+count = 200, loss = 0.01299
+count = 400, loss = 0.00864
+count = 600, loss = 0.00761
+count = 800, loss = 0.01005
+count = 1000, loss = 0.00969
+count = 1200, loss = 0.00926
+count = 1400, loss = 0.00775

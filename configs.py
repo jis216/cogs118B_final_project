@@ -18,3 +18,4 @@ cfg['device'] = 'cuda'
 cfg['output_dir'] = './reviews/'
 cfg['embedding_dim'] = 301
 cfg['embed'] = False
+cfg['score_range'] = 10
